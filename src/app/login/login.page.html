@@ -1,54 +1,27 @@
-<ion-header class="navbar">
-<ion-toolbar color="dark">
-  <ion-title class="titulo"> Crie um login</ion-title>
+<ion-header>
+<ion-toolbar>
+  <ion-title text-center>Login</ion-title>
 </ion-toolbar>
 </ion-header>
 
-<div class="defina" color="black">
-<h2>Cadastro</h2>
-</div>
+<ion-content padding class=”loginPage” scroll=”false”>
+<ion-list>
 
-<ion-content>
-<div class="input-group">
-  <label class="label">Email</label>
-  <input
-    autocomplete="off"
-    name="Email"
-    id="Email"
-    class="input"
-    type="email"
-  />
-  <div></div>
-</div>
+  <ion-item>
+    <ion-label position="floating">Nome</ion-label>
+    <ion-input type="text" [(ngModel)] = "nome"></ion-input>
+  </ion-item>
 
-<div class="input-group">
-  <label class="label">Senha</label>
-  <input
-    autocomplete="off"
-    name="Email"
-    id="Email"
-    class="input"
-    type="password"
-  />
-  <div></div>
-</div>
+  <ion-item>
+    <ion-label position="floating">Senha</ion-label>
+    <ion-input type="password" [(ngModel)] = "senha"></ion-input>
+  </ion-item>
 
-<div class="input-group">
-  <label class="label">Confirmar Senha</label>
-  <input
-    autocomplete="off"
-    name="Email"
-    id="Email"
-    class="input"
-    type="password"
-  />
-  <div></div>
-</div>
+</ion-list>
 
-<div class="box">
-  <ion-checkbox class="check" slot="start"></ion-checkbox>
-  <ion-label class="titulo-check">Aceito a política...</ion-label>
-</div>
-
-<button [routerLink]="['/tabs/tab1']"><span>Próximo</span></button>
+<ion-button fill="solid" expand="block" color="dark" (click)="login()">Logar</ion-button>
+<ion-button fill="outline" expand="block" color="success" (click)="encaminharRegister()">
+    <ion-icon slot="start" name="add"></ion-icon>
+    Fazer cadastro
+</ion-button>
 </ion-content>

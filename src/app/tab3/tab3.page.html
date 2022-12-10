@@ -1,78 +1,54 @@
-<ion-header>
-  <ion-toolbar>
-  <ion-button
-  class="botao-voltar"
-  slot="start"
-  color="light"
-  shape="round"
-  size="small"
-  ><ion-icon name="arrow-back"></ion-icon
-></ion-button>
-    <ion-title class="titulo"> Sobre a empresa </ion-title>
-  </ion-toolbar>
+<ion-header class="navbar">
+<ion-toolbar color="dark">
+  <ion-title class="titulo"> Crie um login</ion-title>
+</ion-toolbar>
 </ion-header>
 
-<ion-text class="defina" color="black">
-  <h1>Selecione qual(is) ODS mais definem sua empresa</h1>
-</ion-text>
-
+<div class="defina" color="black">
+<h2>Cadastro</h2>
+</div>
 
 <ion-content>
-  <div class="conteudo">
-    <ion-grid>
-      <ion-row>
-        <ion-col>
-          <ion-card>
-            <ion-img
-              class="ods7"
-              src="https://pactoglobal.org.br/storage/ods/March2019/hcl5EGiQcRTCd5mCKPTp.png"
-            >
-            </ion-img> </ion-card
-        ></ion-col>
-        <ion-col
-          ><ion-card>
-            <ion-img
-              class="ods11"
-              src="https://pactoglobal.org.br/storage/ods/March2019/bxRPLjNL3Wn2tdnNtFVh.png"
-            >
-            </ion-img> </ion-card
-        ></ion-col>
-      </ion-row>
-      <ion-row>
-        <ion-col
-          ><ion-card>
-            <ion-img
-              class="ods12"
-              src="https://pactoglobal.org.br/storage/ods/March2019/ZtyCHWK2COeLpo1zZFjX.png"
-            >
-            </ion-img> </ion-card
-        ></ion-col>
-        <ion-col
-          ><ion-card>
-            <ion-img
-              class="ods13"
-              src="https://pactoglobal.org.br/storage/ods/March2019/es9X7wRxtv5I7Rsp4gru.png"
-            >
-            </ion-img> </ion-card
-        ></ion-col>
-      </ion-row>
-      <ion-row>
-        <ion-col
-          ><ion-card>
-            <ion-img
-              class="ods14"
-              src="https://pactoglobal.org.br/storage/ods/March2019/1PTLptOcwggY9zF5CfBp.png"
-            >
-            </ion-img> </ion-card
-        ></ion-col>
-        <ion-col
-          ><ion-card>
-            <ion-img
-              class="ods15"
-              src="https://pactoglobal.org.br/storage/ods/March2019/uarTi2KZedmOeINgioc9.png"
-            >
-            </ion-img> </ion-card
-        ></ion-col>
-      </ion-row>
-    </ion-grid></div
-></ion-content>
+<div class="input-group">
+  <label class="label">Email</label>
+  <input
+    autocomplete="off"
+    name="Email"
+    id="Email"
+    class="input"
+    type="email"
+  />
+  <div></div>
+</div>
+
+<div class="input-group">
+  <label class="label">Senha</label>
+  <input
+    autocomplete="off"
+    name="Email"
+    id="Email"
+    class="input"
+    type="password"
+  />
+  <div></div>
+</div>
+
+<div class="input-group">
+  <label class="label">Confirmar Senha</label>
+  <input
+    autocomplete="off"
+    name="Email"
+    id="Email"
+    class="input"
+    type="password"
+  />
+  <div></div>
+</div>
+
+<div class="box">
+  <ion-checkbox class="check" slot="start"></ion-checkbox>
+  <ion-label class="titulo-check">Aceito a política...</ion-label>
+</div>
+
+<button [routerLink]="['/tabs/tab1']"><span>Próximo</span></button>
+</ion-content>
