@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-toolbar>
+  <ion-button
+  class="botao-voltar"
+  slot="start"
+  color="light"
+  shape="round"
+  size="small"
+  ><ion-icon name="arrow-back"></ion-icon
+></ion-button>
+    <ion-title class="titulo"> </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<ion-text class="defina" color="black">
+<h1>O que você deseja?</h1>
+</ion-text>
+
+  <div class="conteudo">  
+    <ion-card [routerLink]="['/tabs/tab2']">
+      <ion-item>
+        <ion-thumbnail slot="start">
+          <ion-img
+            class="criar"
+            src="https://cdn-icons-png.flaticon.com/512/269/269074.png"
+          >
+          </ion-img
+        ></ion-thumbnail>
+        <ion-label>Criar nova empresa</ion-label>
+      </ion-item></ion-card>
+      <ion-card>
+      <ion-item>
+        <ion-thumbnail slot="start">
+          <ion-img
+            class="entrar"
+            src="https://cdn-icons-png.flaticon.com/512/746/746859.png"
+          >
+          </ion-img
+        ></ion-thumbnail>
+        <ion-label>Procurar empresa existente</ion-label>
+      </ion-item></ion-card
+    >
+  </div></ion-content
+>

@@ -1,0 +1,54 @@
+<ion-header class="navbar">
+<ion-toolbar color="dark">
+  <ion-title class="titulo"> Crie um login</ion-title>
+</ion-toolbar>
+</ion-header>
+
+<div class="defina" color="black">
+<h2>Cadastro</h2>
+</div>
+
+<ion-content>
+<div class="input-group">
+  <label class="label">Email</label>
+  <input
+    autocomplete="off"
+    name="Email"
+    id="Email"
+    class="input"
+    type="email"
+  />
+  <div></div>
+</div>
+
+<div class="input-group">
+  <label class="label">Senha</label>
+  <input
+    autocomplete="off"
+    name="Email"
+    id="Email"
+    class="input"
+    type="password"
+  />
+  <div></div>
+</div>
+
+<div class="input-group">
+  <label class="label">Confirmar Senha</label>
+  <input
+    autocomplete="off"
+    name="Email"
+    id="Email"
+    class="input"
+    type="password"
+  />
+  <div></div>
+</div>
+
+<div class="box">
+  <ion-checkbox class="check" slot="start"></ion-checkbox>
+  <ion-label class="titulo-check">Aceito a política...</ion-label>
+</div>
+
+<button [routerLink]="['/tabs/tab1']"><span>Próximo</span></button>
+</ion-content>

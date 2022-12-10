@@ -1,0 +1,135 @@
+.pesquisa {
+  width: 280px;
+  margin-left: 6px;
+  margin-right: 6px;
+}
+ 
+.conversa,
+.notificaçao {
+  padding-right: 10px;
+  width: 25px;
+  height: 25px;
+}
+ 
+.conteudo {
+  background-color: #05060fc2;
+}
+ 
+.imagem-pessoa {
+  margin-top: 8px;
+  width: 50px;
+  height: 50px;
+}
+ 
+.perfil {
+  background-color: #fff;
+  margin-top: 2%;
+  margin-left: 5%;
+  margin-right: 8%;
+  margin-bottom: -15px;
+}
+ 
+.nome {
+  font-weight: 600;
+  margin-top: 13px;
+}
+ 
+.descriçao {
+ margin-top: -5px;
+ font-size: 14px;
+}
+ 
+.descriçao-2 {
+  margin-top: -8px
+}
+ 
+.descriçao, .descriçao-2{
+  font-size: 13px;
+}
+ 
+button {
+  --color: #fff;  
+  font-family: inherit;
+  display: inline-block;
+  width: 5.5em;
+  height: 2.2em;
+  line-height: 2.2em;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid var(--color);
+  transition: color .5s;
+  z-index: 1;
+  font-size: 17px;
+  border-radius: 25px;
+  color: var(--color);
+  background-color: #222428;
+ }
+ 
+ 
+ 
+ button:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: var(--color);
+  height: 150px;
+  width: 200px;
+  border-radius: 50%;
+ }
+ 
+ button:hover {
+  color: #222428
+ }
+ 
+ button:before {
+  top: 100%;
+  right: 100%;
+  transition: all .3s;
+ }
+ 
+ button:hover:before {
+  top: -30px;
+  right: -30px;
+ }
+ 
+ button:active:before {
+  background: #fff;
+  transition: background 0s;
+ }
+ 
+ .user {
+ margin-top: 5px;
+ width: 54px;
+ height: 54px;
+ 
+ }
+ 
+ .legenda {
+  margin-left: 7%;
+  margin-right: 7%;
+ }
+ 
+ span{
+   color: #9EC7E1;
+ }
+ 
+ .icons {
+  margin-top: -5px;
+  margin-left: 6px;
+  margin-bottom: -5px;
+ }
+ 
+ .icon {
+  width: 25px;
+  height: 25px;
+  padding-left: 5px;
+ }
+ 
+ .chat {
+  margin-top: px;
+ }
+ 
+ .chat-titulo {
+  color: #9EC7E1;
+  margin-left: 12px;
+ }

@@ -1,0 +1,92 @@
+<ion-header class="header">
+  <ion-toolbar>
+  <ion-button
+  class="botao-voltar"
+  slot="start"
+  color="light"
+  shape="round"
+  size="small"
+  ><ion-icon name="arrow-back"></ion-icon
+></ion-button>
+    <ion-title class="titulo"> Sobre a empresa </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-text class="defina" color="black">
+  <h1>Selecione qual categoria <br> que mais define sua empresa  </h1>
+</ion-text>
+
+<ion-content>
+  <div class="conteudo">
+    <ion-card [routerLink]="['/tabs/tab3']">
+      <ion-item>
+        <ion-thumbnail slot="start">
+          <ion-img class="reciclabilidade"
+            src="https://imagepng.org/wp-content/uploads/2017/06/simbolo-de-reciclagem-1024x1000.png"
+          >
+          </ion-img
+        ></ion-thumbnail>
+        <ion-label>Reciclabilidade</ion-label>
+      </ion-item></ion-card
+    >
+    <ion-card [routerLink]="['/tabs/tab3']">
+      <ion-item>
+        <ion-thumbnail slot="start">
+          <ion-img class="limpeza"
+            src="https://www.pngall.com/wp-content/uploads/5/Delete-Bin-Trash-PNG-Free-Download.png"
+          >
+          </ion-img
+        ></ion-thumbnail>
+        <ion-label>Limpeza</ion-label>
+      </ion-item></ion-card
+    >
+    <ion-card [routerLink]="['/tabs/tab3']">
+      <ion-item>
+        <ion-thumbnail slot="start">
+          <ion-img
+            class="lampada"
+            src="https://static.vecteezy.com/system/resources/previews/009/408/673/non_2x/light-bulb-transparent-free-png.png"
+          >
+          </ion-img
+        ></ion-thumbnail>
+        <ion-label>Energias Renováveis</ion-label>
+      </ion-item></ion-card
+    >
+    <ion-card [routerLink]="['/tabs/tab3']">
+      <ion-item>
+        <ion-thumbnail slot="start">
+          <ion-img
+            class="comercio"
+            src="https://cdn-icons-png.flaticon.com/512/146/146945.png"
+          >
+          </ion-img
+        ></ion-thumbnail>
+        <ion-label>Comercio Sustentável</ion-label>
+      </ion-item></ion-card
+    >
+    <ion-card [routerLink]="['/tabs/tab3']">
+    <ion-item>
+      <ion-thumbnail slot="start">
+        <ion-img
+          class="clima"
+          src="https://cdn-icons-png.flaticon.com/512/1116/1116453.png"
+        >
+        </ion-img
+      ></ion-thumbnail>
+      <ion-label>Revolução Climática</ion-label>
+    </ion-item></ion-card>
+
+    <ion-card [routerLink]="['/tabs/tab3']">
+    <ion-item>
+      <ion-thumbnail slot="start">
+        <ion-img
+          class="saude"
+          src="https://www.viconsaga.com.br/projects/197/91821.png"
+        >
+        </ion-img
+      ></ion-thumbnail>
+      <ion-label>Saúde e bem-estar</ion-label>
+    </ion-item></ion-card>
+
+  </div></ion-content
+>

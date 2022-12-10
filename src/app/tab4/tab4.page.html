@@ -1,0 +1,57 @@
+<ion-header class="navbar">
+  <ion-toolbar color="dark">
+    <ion-buttons slot="start">
+      <ion-menu-button auto-hide="false"></ion-menu-button>
+    </ion-buttons>
+    <ion-buttons slot="start">
+      <ion-icon slot="icon-only" name="person-circle"></ion-icon>
+    </ion-buttons>
+    <ion-searchbar class="pesquisa" slot="start"></ion-searchbar>
+    <ion-buttons slot="end">
+      <ion-icon class="conversa" name="chatbubble-ellipses-outline"></ion-icon>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-icon class="notificaçao" name="notifications-outline"></ion-icon>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+ 
+<ion-content color="dark" class="conteudo">
+  <ion-item color="daark" class="perfil">
+    <ion-thumbnail item-left>
+      <ion-icon class="user" name="person-circle-outline"></ion-icon>
+    </ion-thumbnail>
+ 
+    <ion-label>
+      <h2 class="nome">Valter</h2>
+      <p class="descriçao">Gestor investidor</p>
+      <p class="descriçao-2">1 hr</p>
+    </ion-label>
+    <button>+ Seguir</button>
+  </ion-item>
+ 
+  <ion-card class="feed" color="dark">
+    <p class="legenda">
+      Lorem ipsum dolor sit amet. Et distinctio nisi aut asd inventore facilis
+      ex fugiat omnis. Quo totam add drs praesentium aut magnam consequatur
+      us... <span>ver mais</span>
+    </p>
+    <img
+      class="img-montanha"
+      width="410"
+      height="210"
+      alt="Silhouette of mountains"
+      src="https://ionicframework.com/docs/img/demos/card-media.png"
+    />
+    <ion-card-header class="chat" color="dark">
+      <div class="icons">
+        <ion-icon class="icon" name="chatbubble-ellipses-outline"></ion-icon>
+        <ion-icon class="icon" name="heart-outline"></ion-icon>
+        <ion-icon class="icon" name="share-social-outline"></ion-icon>
+      </div>
+      <ion-card-subtitle class="chat-titulo"
+        ><span>Ver comentários</span></ion-card-subtitle
+      >
+    </ion-card-header>
+  </ion-card>
+</ion-content>

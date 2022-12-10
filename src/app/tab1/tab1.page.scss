@@ -1,0 +1,37 @@
+h1 {
+  font-size: 140%;
+  font-weight: bold;
+  }
+
+  .botao-voltar {
+    width: 40px;
+    height: 30px;
+    margin-left: 3%;
+  }
+
+.titulo {
+  text-align: center;
+}
+
+.defina {
+  text-align: center;
+}
+.list {
+  text-align: justify;
+
+}
+
+.defina {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+ion-card {
+  border-radius: 15px;
+  cursor: pointer;
+  transition-duration: 500ms;
+  
+}
+
+ion-card:hover {
+  transform: scale(1.03);
+}

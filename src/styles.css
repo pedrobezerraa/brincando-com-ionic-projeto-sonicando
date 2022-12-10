@@ -1,0 +1,8 @@
+/* Add application styles & imports to this file! */
+@import "~@ionic/angular/css/ionic.bundle.css";
+
+:root {
+	--ion-toolbar-background: #222428;
+	--ion-toolbar-color: #ffffff;
+
+}

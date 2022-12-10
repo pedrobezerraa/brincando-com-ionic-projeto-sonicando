@@ -1,0 +1,51 @@
+h1 {
+  font-size: 105%;
+  font-weight: bold;
+  }
+
+  .botao-voltar {
+    width: 40px;
+    height: 30px;
+    margin-left: 3%;
+  }
+
+.titulo {
+  text-align: center;
+  padding-right: 20%;
+}
+
+.defina {
+  text-align: center;
+}
+
+.defina {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.conteudo {
+  max-width: 100%;
+  text-align: center;
+
+    ion-card {
+    border-radius: 15px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    transition-duration: 500ms;
+
+  }
+
+  ion-row {
+size: 100%;
+
+  }
+
+  ion-card:hover {
+    transform: scale(1.03);
+  }
+}
+
+:root {
+  --ion-card-background: linear-gradient
+    (139deg, #831affab 0%, transparent 100%);
+  --ion-item-background: transparent;
+}
