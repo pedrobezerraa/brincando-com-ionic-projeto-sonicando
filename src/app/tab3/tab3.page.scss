@@ -4,6 +4,21 @@
   border-radius: 10px;
 }
 
+ion-checkbox{
+  --ion-checkbox-color:"#FFFF"!important;
+}
+
+
+.box {
+  color: #ffffff!important;
+}
+
+
+
+ion-content{
+  --ion-background-color:#222428;
+}
+
 .defina {
   text-align: center;
   margin-top: 3%;
@@ -14,14 +29,14 @@
 .input {
   width: 290px;
   height: 44px;
-  background-color: #05060f0a;
+  background-color: #ffffff0a;
   border-radius: 0.5rem;
   padding: 0 1rem;
   border: 2px solid transparent;
   font-size: 1rem;
   transition: border-color 0.3s cubic-bezier(0.25, 0.01, 0.25, 1) 0s,
     color 0.3s cubic-bezier(0.25, 0.01, 0.25, 1) 0s,
-    background 0.2s cubic-bezier(0.25, 0.01, 0.25, 1) 0s;
+   
 }
 
 .label {
@@ -29,7 +44,7 @@
   margin-bottom: 0.3rem;
   font-size: 0.9rem;
   font-weight: bold;
-  color: #05060f99;
+  color: #ffffff;
   transition: color 0.3s cubic-bezier(0.25, 0.01, 0.25, 1) 0s;
 }
 
@@ -42,7 +57,7 @@
 
 .input-group:hover .label,
 .input:focus {
-  color: #05060fc2;
+  color: #d6d6dbc2;
 }
 
 .input,
@@ -112,3 +127,4 @@ button:hover span:after {
   opacity: 1;
   right: 0;
 }
+
