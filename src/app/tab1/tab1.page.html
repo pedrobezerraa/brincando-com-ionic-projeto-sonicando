@@ -1,45 +1,42 @@
-<ion-header>
-  <ion-toolbar>
-  <ion-button
-  class="botao-voltar"
-  slot="start"
-  color="light"
-  shape="round"
-  size="small"
-  ><ion-icon name="arrow-back"></ion-icon
-></ion-button>
-    <ion-title class="titulo"> </ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-app>
 
-<ion-content>
-<ion-text class="defina" color="black">
-<h1>O que você deseja?</h1>
-</ion-text>
-
-  <div class="conteudo">  
-    <ion-card [routerLink]="['/tabs/tab2']">
-      <ion-item>
-        <ion-thumbnail slot="start">
-          <ion-img
-            class="criar"
-            src="https://cdn-icons-png.flaticon.com/512/269/269074.png"
-          >
-          </ion-img
-        ></ion-thumbnail>
-        <ion-label>Criar nova empresa</ion-label>
-      </ion-item></ion-card>
-      <ion-card>
-      <ion-item>
-        <ion-thumbnail slot="start">
-          <ion-img
-            class="entrar"
-            src="https://cdn-icons-png.flaticon.com/512/746/746859.png"
-          >
-          </ion-img
-        ></ion-thumbnail>
-        <ion-label>Procurar empresa existente</ion-label>
-      </ion-item></ion-card
-    >
-    </div></ion-content
->
+<ion-header class="navbar">
+<ion-toolbar color="dark">
+  <ion-title class="titulo"> ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎‎  ‎ ‎ ‎ ‎ ‎ ‎ Siga nas redes</ion-title>
+</ion-toolbar>
+</ion-header> 
+<ion-content padding>
+  <ion-slides [pager]="true" (ionSlideWillChange)="onSlideWillChange()" (ionSlideDidChange)="onSlideDidChange()">
+    <ion-slide>
+    <ion-card class="spotify">
+    <ion-img src="https://upload.wikimedia.org/wikipedia/commons/7/75/Spotify_icon.png"></ion-img>
+    </ion-card>
+    <div class="vertical-center">
+    <div class="center">
+      <ion-img src="https://www.pngarts.com/files/5/Ariana-Grande-PNG-Photo.png"></ion-img>
+    </div>   
+  </div>
+    </ion-slide>
+    <ion-slide>
+    <ion-card class="deezer">
+    <ion-img src="https://podcastfasttrack.com/wp-content/uploads/2018/11/deezer-png-deezer-logo-circle-485.png"></ion-img>
+    </ion-card>
+    <div class="vertical-center">
+    <div class="center">
+      <ion-img src="https://i.pinimg.com/originals/e4/4d/7b/e44d7b7ce12f8a548c27aaaadd49ff73.png"></ion-img>
+    </div>   
+  </div>
+    </ion-slide>
+    <ion-slide>
+    <ion-card class="ytmusic" >
+    <ion-img src="https://logodownload.org/wp-content/uploads/2018/09/youtube-music-logo-1.png"></ion-img>
+    </ion-card>
+    <div class="vertical-center">
+    <div class="center">
+      <ion-img src="https://imagensemoldes.com.br/wp-content/uploads/2021/06/Download-Ariana-Grande-PNG.png"> </ion-img>
+    </div>   
+  </div>
+    </ion-slide>
+  </ion-slides>
+</ion-content>
+</ion-app>

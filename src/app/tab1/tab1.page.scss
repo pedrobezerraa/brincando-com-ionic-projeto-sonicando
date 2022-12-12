@@ -1,37 +1,62 @@
-h1 {
-  font-size: 140%;
-  font-weight: bold;
+ion-app {
+  
+
+  ion-content {
+    --ion-color-base: transparent;
+
+    ion-slides {
+      --bullet-background: #eee;
+      --bullet-background-active: #000;
+    
+
+      ion-slide {
+        height: 476px !important;
+
+        &:nth-child(1) {
+          background-color: rgb(129, 243, 148);
+        }
+
+        &:nth-child(2) {
+          background-color: rgb(97, 61, 85);
+        }
+
+        &:nth-child(3) {
+          background-color: rgb(255, 199, 199);
+        }
+      }
+    }
   }
-
-  .botao-voltar {
-    width: 40px;
-    height: 30px;
-    margin-left: 3%;
-  }
-
-.titulo {
-  text-align: center;
 }
 
-.defina {
-  text-align: center;
-}
-.list {
-  text-align: justify;
 
-}
-
-.defina {
-  font-family: 'Ubuntu', sans-serif;
-}
-
-ion-card {
-  border-radius: 15px;
+ion-card{
+  border-radius: 50%;
+  top: -18%;
+  right: -10%;
+  display: flex;
+  margin: 0 !important;
   cursor: pointer;
   transition-duration: 500ms;
-  
 }
 
 ion-card:hover {
   transform: scale(1.03);
 }
+
+.deezer {
+width: 50%;
+}
+
+.ytmusic {
+  width: 25%;
+}
+
+@keyframes spotify {
+  0% {
+    transform: translate(0, 3px);
+  }
+  100% {
+    transform: translate(0, -3px);
+  }
+}
+
