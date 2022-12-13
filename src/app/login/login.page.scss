@@ -1,17 +1,37 @@
-.principal {
+.texto {
   font-size: 85%;
   font-weight: bold;
-  text-align: center
+  text-align: center;
+
 }
 
 .vertical-center{
   display: flex;
   align-items: center;
+  margin-top: -6%;
   justify-content: center;
   height: 60%;
 }
 
-.img {
-  animation: enter 4s infinite alternate;
+
+img{
+  width: 90%;
+  margin: auto;
+  display: block;
 }
 
+ion-card{
+  cursor: pointer;
+  border-radius: 100%;
+  top: 28%;
+  right: -5%;
+  display: flex;
+  transition-duration: 500ms;
+  width: 20%;
+  transform: scale(1.03);
+  
+}
+
+ion-card:hover {
+  transform: scale(1.03);
+}
